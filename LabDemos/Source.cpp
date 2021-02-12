@@ -1,21 +1,20 @@
 //calculate the area of a rectangle
 #include <iostream>;
+#include <cmath>;
 using namespace std;
 
 int main()
 {
-	int  length, width, area;
+	const double PI = 3.13159;
+	double area, radius;
 
-	cout << "The programe calculates the area of the rectangle.\n";
+	cout << "This programe will calculate the area of a circle.\n";
 
-	cout << "what is the length of the rectangle (as an integer)?\n";
-	cin >> length;
-	cout << "What is the width of the rectangle (as an integer)?\n";
-	cin >> width;
+	cout << "What is the radius of the circle?\n";
+	cin >> radius;
 
-	area = length * width;
-
-	cout << "The area of the rectangle is " << area << endl;
+	area = PI * pow(radius, 2);
+	cout << "The area of the circle is " << area << endl;
 
 	return 0;
 
